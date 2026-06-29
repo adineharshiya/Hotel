@@ -1,11 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // تنظیمات خروجی استاتیک برای گیت‌هاب پیجز
-  output: 'export',  // <-- این خط رو اضافه کن
-  
+  output: 'export',
+  basePath: '/Hotel-reservation',  // <-- این خط رو اضافه کن
   images: {
-    unoptimized: true,  // <-- این رو هم اضافه کن برای پشتیبانی از عکس‌ها
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -21,9 +20,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  
-  // اگه توی ساب‌پوشه هستی (مثل /Hotel-reservation)
-  // basePath: '/Hotel-reservation',
 };
 
 export default nextConfig;
