@@ -1,10 +1,10 @@
 1:"$Sreact.fragment"
-2:I[47257,["/Hotel-reservation/_next/static/chunks/05-c3ty_6dwfk.js","/Hotel-reservation/_next/static/chunks/14mrh2-p_w84d.js"],"ClientPageRoot"]
-3:I[31713,["/Hotel-reservation/_next/static/chunks/05-c3ty_6dwfk.js","/Hotel-reservation/_next/static/chunks/14mrh2-p_w84d.js","/Hotel-reservation/_next/static/chunks/41d_j5u1s-qz-.js"],"default"]
-6:I[97367,["/Hotel-reservation/_next/static/chunks/05-c3ty_6dwfk.js","/Hotel-reservation/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+2:I[47257,["/Hotel/_next/static/chunks/05-c3ty_6dwfk.js","/Hotel/_next/static/chunks/14mrh2-p_w84d.js"],"ClientPageRoot"]
+3:I[31713,["/Hotel/_next/static/chunks/05-c3ty_6dwfk.js","/Hotel/_next/static/chunks/14mrh2-p_w84d.js","/Hotel/_next/static/chunks/42okj43vvd5e5.js"],"default"]
+6:I[97367,["/Hotel/_next/static/chunks/05-c3ty_6dwfk.js","/Hotel/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-:HL["/Hotel-reservation/_next/static/chunks/1j_vldtdm5ldl.css","style"]
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","link","0",{"rel":"stylesheet","href":"/Hotel-reservation/_next/static/chunks/1j_vldtdm5ldl.css","precedence":"next"}],["$","script","script-0",{"src":"/Hotel-reservation/_next/static/chunks/41d_j5u1s-qz-.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"5nMSQjEoM0OUN5utbQde4"}
+:HL["/Hotel/_next/static/chunks/1j_vldtdm5ldl.css","style"]
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","link","0",{"rel":"stylesheet","href":"/Hotel/_next/static/chunks/1j_vldtdm5ldl.css","precedence":"next"}],["$","script","script-0",{"src":"/Hotel/_next/static/chunks/42okj43vvd5e5.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"IT3lXW8txPXliWVD-Dsgn"}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
