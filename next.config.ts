@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/Hotel-reservation',  // <-- این خط رو اضافه کن
+  basePath: '/Hotel',  // <-- این خط مهمه
   images: {
     unoptimized: true,
     remotePatterns: [
