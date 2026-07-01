@@ -1,25 +1,30 @@
+// صفحه اصلی
 'use client'
 
-// ========== ایمپورت‌های خارجی ==========
+// ========== ایمپورت‌های خارجی و هوک‌های React ==========
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 
-// ========== ایمپورت‌های داخلی و کتابخانه‌ها ==========
+// ========== کتابخانه‌های اسلایدر ==========
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
+// ========== کامپوننت‌های UI ==========
 import { Button } from '@/components/ui/button'
+
+// ========== آیکون‌های اصلی (lucide-react) ==========
 import { 
   MapPin, Calendar, Users, CheckCircle, Headphones, CalendarX2, Gift, 
   Star, BedDouble, ThumbsUp, ShieldCheck, Gem, Heart, Mail, Phone, 
   ArrowRight, Globe, MessageCircle, Menu, X
 } from 'lucide-react'
-// آیکون‌های جدید از react-icons
+
+// ========== آیکون‌های شبکه‌های اجتماعی (react-icons) ==========
 import { FaInstagram, FaTwitter } from 'react-icons/fa'
 
 // ========== داده‌های استاتیک برای تمیزی بیشتر کد ==========
@@ -227,9 +232,12 @@ export default function Home() {
               Discover handpicked hotels and exclusive deals for an extraordinary experience.
             </p>
             
-            <Button className="bg-amber-600 hover:bg-amber-700 text-white rounded-full px-8 h-12 text-sm font-semibold shadow-xl shadow-amber-900/20 flex items-center gap-2 mx-auto">
-              Explore Hotels <ArrowRight className="h-4 w-4" />
-            </Button>
+            {/* === دکمه‌ی Explore Hotels با لینک به صفحه‌ی هتل‌ها === */}
+            <Link href="/hotels">
+              <Button className="bg-amber-600 hover:bg-amber-700 text-white rounded-full px-8 h-12 text-sm font-semibold shadow-xl shadow-amber-900/20 flex items-center gap-2 mx-auto">
+                Explore Hotels <ArrowRight className="h-4 w-4" />
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>

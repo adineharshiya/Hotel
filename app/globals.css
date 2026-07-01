@@ -116,6 +116,151 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+/* استایل‌های تقویم react-day-picker نسخه ۱۰ به‌سبک Airbnb */
+
+.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #1a1a1a;
+  --rdp-background-color: #f3f4f6;
+  --rdp-accent-color-dark: #000;
+  --rdp-background-color-dark: #e5e7eb;
+  --rdp-outline: 2px solid var(--rdp-accent-color);
+  --rdp-outline-selected: 2px solid rgba(0, 0, 0, 0.75);
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.rdp-month {
+  background-color: white;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.rdp-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 8px 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.rdp-nav {
+  display: flex;
+  gap: 6px;
+}
+
+.rdp-nav_button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: #4b5563;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.rdp-nav_button:hover {
+  background-color: #f3f4f6;
+}
+
+.rdp-head_row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.rdp-head_cell {
+  width: var(--rdp-cell-size);
+  height: var(--rdp-cell-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 500;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rdp-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+.rdp-cell {
+  width: var(--rdp-cell-size);
+  height: var(--rdp-cell-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rdp-day {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1a1a1a;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.rdp-day:hover:not(.rdp-day_selected):not(.rdp-day_range_middle) {
+  background-color: #f3f4f6;
+}
+
+.rdp-day_selected {
+  background-color: #1a1a1a !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+.rdp-day_range_middle {
+  background-color: #f3f4f6 !important;
+  color: #1a1a1a !important;
+  border-radius: 0 !important;
+}
+
+.rdp-day_range_start {
+  background-color: #1a1a1a !important;
+  color: white !important;
+  border-radius: 50% 0 0 50% !important;
+}
+
+.rdp-day_range_end {
+  background-color: #1a1a1a !important;
+  color: white !important;
+  border-radius: 0 50% 50% 0 !important;
+}
+
+.rdp-day_today:not(.rdp-day_selected) {
+  background-color: #e5e7eb;
+  font-weight: 600;
+}
+
+.rdp-day_outside {
+  color: #d1d5db;
+  pointer-events: none;
+}
+
+.rdp-day_disabled {
+  color: #d1d5db;
+  pointer-events: none;
+  text-decoration: line-through;
+}
 
 @layer base {
   * {
